@@ -11,7 +11,11 @@
       href="https://scontent.fhan3-5.fna.fbcdn.net/v/t39.30808-6/288984021_1383527512159888_6633764809763317832_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=lq0L_DVk72YAX8jwCzW&_nc_ht=scontent.fhan3-5.fna&oh=00_AfCx1FZ_NCZkTzHTjiMRKG2vsAJa47Nd5FCufWVrnuRsnA&oe=63A10F9E"
     />
   </head>
+
   <body>
+    <audio autoplay loop id="playAudio">
+      <source src="./img/merrychrismas.mp3" />
+    </audio>
     <div class="card-container">
       <div class="snow-flakes-1"></div>
       <div class="snow-flakes-2"></div>
@@ -83,5 +87,17 @@
       </div>
     </div>
   </body>
+  <script>
+    var body = document.getElementsByTagName("body")[0];
+    function playMusic() {
+      var myAudio = document.getElementById("playAudio");
+      if (myAudio.duration > 0 && !myAudio.paused) {
+      } else {
+        myAudio.play();
+      }
+    }
+    body.addEventListener("click", function (ev) {
+      playMusic();
+    });
+  </script>
 </html>
-<script></script>
