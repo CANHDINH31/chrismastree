@@ -81,7 +81,13 @@ span {
 -- Card Styles
 */
 .rikkei {
-  margin-top: 20px;
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 5;
+  font-size: 30px;
 }
 
 .card-container {
@@ -176,17 +182,18 @@ span {
   -moz-animation: Blink 0.5s infinite;
   animation: Blink 0.5s infinite;
 }
+.tree-p1 img {
+  -webkit-animation: Blink 0.5s infinite;
+  -moz-animation: Blink 0.5s infinite;
+  animation: Blink 0.5s infinite;
+}
 
-.ball-0 {
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  background-color: #fbc02d;
-  border: 6px solid #f9a825;
-  margin: auto;
+.tree-p1 img {
+  height: 100px;
+  width: 100px;
   position: relative;
-  top: 15px;
-  z-index: 6;
+  top: 25px;
+  z-index: 1;
 }
 
 .ball-1 {
@@ -292,6 +299,10 @@ span {
 .tree-p3,
 .tree-p4 {
   text-align: center;
+}
+
+.tree-p3 {
+  position: relative;
 }
 
 .tree-p1 li,
